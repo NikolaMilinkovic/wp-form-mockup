@@ -53,6 +53,7 @@ table {
     height: 100vh;  
     background-color: #000D1F;
     overflow: hidden;
+    font-family: Helvetica, sans-serif, Arial;
 
     --color: #c1f3f3;
     --focus-color: #10a7a7;

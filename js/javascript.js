@@ -19,6 +19,7 @@ document.addEventListener('keydown', function(event) {
 
     document.addEventListener("mousemove", moveBackground);
 
+    // Turns off parallax for device with certain width
     if (window.matchMedia("(max-width: 600px)").matches) {
         return;
     }
@@ -28,7 +29,7 @@ document.addEventListener('keydown', function(event) {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
 
-        // Calculate parallax movement for the background buildings
+        // Calculate parallax movement for the vectors / png's
         parallaxElements.forEach((element) => {
             const factorX = element.getAttribute("data-speed-x");
             const factorY = element.getAttribute("data-speed-y");
