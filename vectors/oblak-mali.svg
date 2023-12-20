@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004874;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#_Áåçûìÿííûé_ãðàäèåíò_69);
+      }
+
+      .cls-3 {
+        fill: url(#_Áåçûìÿííûé_ãðàäèåíò_22);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-5" width="1000" height="400"/>
+    </clipPath>
+    <linearGradient id="_Áåçûìÿííûé_ãðàäèåíò_69" data-name="Áåçûìÿííûé ãðàäèåíò 69" x1="422.31" y1="132.74" x2="422.31" y2="118.93" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#002450"/>
+      <stop offset=".15" stop-color="#041d4e"/>
+      <stop offset=".57" stop-color="#0d114a"/>
+      <stop offset="1" stop-color="#100e49"/>
+    </linearGradient>
+    <linearGradient id="_Áåçûìÿííûé_ãðàäèåíò_22" data-name="Áåçûìÿííûé ãðàäèåíò 22" x1="642.86" y1="133.38" x2="642.86" y2="99.12" gradientTransform="translate(3.02 -9.41) rotate(.82)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#002a66"/>
+      <stop offset=".21" stop-color="#001d4f"/>
+      <stop offset=".47" stop-color="#00113b"/>
+      <stop offset=".74" stop-color="#000a2f"/>
+      <stop offset="1" stop-color="#00082c"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1">
+    <g class="cls-4">
+      <g>
+        <path class="cls-2" d="m319.69,132.74l205.23-1.33-49.51-.87s-11.17-24.25-55.29-2.69c0,0-1.43-5.21-15.52,1.94l-84.92,2.95Z"/>
+        <path class="cls-3" d="m503.47,131.14l280.92.8-53.13-2.37s-20.69-32.53-48.6-29.94c-27.9,2.59-52.46,28.12-52.46,28.12,0,0-4.77-10.86-21.67.55,0,0-19.74-12.38-37.49-7.58-17.75,4.8-25.65,9.21-25.65,9.21l-41.93,1.21Z"/>
+        <path class="cls-1" d="m784.39,131.94l-280.92-.8s187.29,5.98,280.92.8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
