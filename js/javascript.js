@@ -100,7 +100,7 @@ function beginSunset() {
     setTimeout(function () {
         document.getElementById('landing-page-container').classList.toggle('no-display');
         document.getElementById('landing-page-container').classList.toggle('landing-page-transition');
-    }, 2600);
+    }, 2300);
 
     // Name Message
     setTimeout(function () {
@@ -109,35 +109,35 @@ function beginSunset() {
         document.getElementById('h1-info-name').classList.toggle('no-display');
         document.getElementById('h1-info-name').classList.toggle('transition-user-info');
         document.getElementById('h1-info-name').innerHTML += document.getElementById('input-name').value + " " + document.getElementById('input-last-name').value;
-    }, 3500);
+    }, 3400);
     setTimeout(function () {
         document.getElementById('greet-message-2').classList.toggle('no-display-text');
         document.getElementById('greet-message-2').classList.toggle('transition-user-info');
         document.getElementById('h1-info-password').classList.toggle('no-display');
         document.getElementById('h1-info-password').classList.toggle('transition-user-info');
         document.getElementById('h1-info-password').innerHTML += document.getElementById('input-password').value;
-    }, 3700);
+    }, 3600);
     setTimeout(function () {
         document.getElementById('greet-message-3').classList.toggle('no-display-text');
         document.getElementById('greet-message-3').classList.toggle('transition-user-info');
         document.getElementById('h1-info-email').classList.toggle('no-display');
         document.getElementById('h1-info-email').classList.toggle('transition-user-info');
         document.getElementById('h1-info-email').innerHTML += document.getElementById('input-email').value;
-    }, 3900);
+    }, 3800);
     setTimeout(function () {
         document.getElementById('greet-message-4').classList.toggle('no-display-text');
         document.getElementById('greet-message-4').classList.toggle('transition-user-info');
         document.getElementById('h1-info-phone').classList.toggle('no-display');
         document.getElementById('h1-info-phone').classList.toggle('transition-user-info');
         document.getElementById('h1-info-phone').innerHTML += document.getElementById('input-phone-num').value;
-    }, 4100);
+    }, 4000);
     setTimeout(function () {
         document.getElementById('greet-message-5').classList.toggle('no-display-text');
         document.getElementById('greet-message-5').classList.toggle('transition-user-info');
         document.getElementById('h1-info-webpage').classList.toggle('no-display');
         document.getElementById('h1-info-webpage').classList.toggle('transition-user-info');
         document.getElementById('h1-info-webpage').innerHTML += document.getElementById('input-site-url').value;
-    }, 4300);
+    }, 4200);
 
 
 
