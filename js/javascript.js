@@ -104,5 +104,5 @@ function beginSunset() {
     setTimeout(function () {
         enableParallax = true;
         document.addEventListener("mousemove", moveBackground);
-    }, 2050);
+    }, 1550);
 }
