@@ -101,7 +101,7 @@ function beginSunset() {
     setTimeout(function () {
         document.getElementById('landing-page-container').classList.toggle('no-display');
         document.getElementById('landing-page-container').classList.toggle('landing-page-transition');
-    }, 2300);
+    }, 2300); 
 
     // Name Message
     setTimeout(function () {
