@@ -18,20 +18,24 @@ const siteUrlReg = /^https?:\/\/www\.[a-zA-Z0-9]+\.[a-zA-Z]+\.?[a-zA-Z]*(\/[a-zA
 
 export function evaluateInput(){
 
+    // Input Helvos in the name field to bypass the regex evaluation
     if(inputName.value === "Helvos"){
         transitionPage();
         return;
     }
-        
+    
+    // Cleans the error messages
     phoneErrOutput.innerHTML = '';
     emailErrOutput.innerHTML = '';
     passErrOutput.innerHTML = '';
-
+    siteUrlErrOutput.innerHTML = '';
 
     // Remove all children elements
     while (passErrOutput.firstChild) {
         passErrOutput.removeChild(passErrOutput.firstChild);
     }
+
+
 
     // Eval Name
     if(inputName.value === ''){
@@ -39,6 +43,8 @@ export function evaluateInput(){
         inputName.focus();
         return;
     }
+
+
     // Eval Last Name
     if(inputLastName.value === ''){
         inputLastName.setAttribute('placeholder', "* Please enter your last name.");
@@ -72,23 +78,23 @@ export function evaluateInput(){
 
                 // Eval Password uppercase
                 if (!/(?=.*[A-Z])/.test(passField.value)) {
-                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 10px;">- upper case letter</span><br>';
+                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 11px;">- upper case letter</span><br>';
                 }
                 // Eval Password number
                 if (!/(?=.*[0-9])/.test(passField.value)) {
-                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 10px;">- number</span><br>';
+                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 11px;">- number</span><br>';
                 }
                 // Eval Password symbol
                 if (!/(?=.*[!@#$%^&*()_+?><,./'|])/.test(passField.value)) {
-                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 10px;">- symbol</span><br>';
+                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 11px;">- symbol</span><br>';
                 }
                 // Eval Password character number
                 if (!/^.{5,}$/.test(passField.value)) {
-                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 10px;">- at least 5 characters long</span><br>';
+                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 11px;">- at least 5 characters long</span><br>';
                 }
                 // Eval Password & Password Repeat match
                 if(inputPassword.value !== inputPasswordRepeat.value){
-                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 10px;">- passwords must match</span><br>';
+                    passErrOutput.innerHTML += '<span style="color: #cc0000; margin-left: 11px;">- passwords must match</span><br>';
                 }
                 return;
             }
@@ -96,6 +102,8 @@ export function evaluateInput(){
         }
     }
     /* \PASSWORD EVALUATION */
+
+
 
     // Eval email
     if(inputEmail.value === ''){
@@ -108,6 +116,8 @@ export function evaluateInput(){
         emailErrOutput.innerHTML = '<span style="color: #cc0000;">Please enter a valid email adress</span><br>';
         return;
     }
+
+
     // Eval phone number
     if(inputPhone.value === ''){
         inputPhone.setAttribute('placeholder', "* Please enter your phone number.");
@@ -119,6 +129,7 @@ export function evaluateInput(){
         phoneErrOutput.innerHTML = '<span style="color: #cc0000;">Please enter a valid phone number</span><br>';
         return;
     }
+
 
     // Eval site url
     if(inputSiteUrl.value === ''){

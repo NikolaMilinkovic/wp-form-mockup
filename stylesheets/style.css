@@ -173,7 +173,7 @@ input:-webkit-autofill{
 }
 #pass-err-output, #email-err-output{
     color: var(--color);
-    font-size: 14px;
+    font-size: 12px;
 }
 #btn-submit {
     border-radius: 15px;
@@ -214,6 +214,10 @@ input:-webkit-autofill{
     position: relative;
     margin-left: auto;
     margin-top: 10%;
+}
+#btn-flex-container{
+    margin-top: auto;
+    display: flex;
 }
 button:after {
     content: "";
@@ -406,3 +410,77 @@ button:focus{
 /*  <-- \SUNRISE SETTINGS -->  */
 
 /*  <-- \PARALLAX SETTINGS -->  */
+
+
+
+#landing-page-container{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    top: 12%;
+    left: 28%;
+    right: 28%;
+    bottom: 18%;
+
+    top: 12vh;
+    left: 28vw;
+    right: 28vw;
+    bottom: 18vh;
+    position: absolute;
+    padding: 3rem;
+    background: linear-gradient(65deg, rgba(111, 17, 59, 0.7), rgba(255, 56, 76, 0.7));
+}
+section#landing-page-container.no-display{
+    display: none;
+}
+.no-display-text{
+    display: none;
+}
+.landing-page-transition{
+    animation: landing-transition ease-in-out 2s;
+}
+@keyframes landing-transition {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    70% {
+        opacity: 1;
+        scale: 1.05;
+    }
+    100% {
+        scale: 1;
+    }
+}
+.announcer-message{
+    color: var(--color);
+    margin: 0;
+    font-size: 2.5vh;
+}
+.info-display-container{
+    min-height: 7vh;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-text{
+    color: #460038;
+    margin: 0;
+    font-size: 3.5vh;
+}
+.h1-transition{
+    animation: landing-transition ease-in-out 2s;
+}
+.transition-user-info{
+    animation: transition-user-info ease-in-out 2s forwards;
+}
+@keyframes transition-user-info {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -16,6 +16,7 @@
 <body>
     <main id="main-form">
         <div class="parallax" id="parallax-container">
+
             <!-- NIGHT VECTORS -->
             <img src="./vectors/nebo-bez-zvezda.svg" alt="background" class="para" data-speed-x="-0.010" data-speed-y="-0.010" id="para-1">
             <img src="./vectors/zvezde-nebo.svg" alt="stars in the sky" class="" data-speed-x="0.025" data-speed-y="0.015" id="para-2">
@@ -34,9 +35,11 @@
             <img src="./vectors/sunrise/Asset 4.svg" alt="reflection" class="para para-sunrise" data-speed-x="-0.002" data-speed-y="-0.0015" id="para-11">
             <img src="./vectors/sunrise/Asset 5.svg" alt="right bush & rocks" class="para para-sunrise" data-speed-x="0.02" data-speed-y="0.02" id="para-12">
             <img src="./vectors/sunrise/Asset 6.svg" alt="left bush & rocks" class="para para-sunrise" data-speed-x="-0.02" data-speed-y="0.015" id="para-13">
-
             <!-- \SUNRISE VECTORS -->
+
         </div>
+
+        <!-- FORM CONTAINER -->
         <section class="form-container" id="form-container">
             <form method="post" id="form">
                 <div class="header-container">
@@ -57,10 +60,36 @@
                 <div id="phone-err-output"></div>
                 <input type="text" id="input-site-url" placeholder="* Site url">
                 <div id="site-url-err-output"></div>
-                <div id="btn-container">
-                    <button type="submit" id="btn-submit">Create Account</button>
+                <div id="btn-flex-container">
+                    <div id="btn-container">
+                        <button type="submit" id="btn-submit">Create Profile</button>
+                    </div>
                 </div>
             </form>
+        </section>
+        <!-- \FORM CONTAINER -->
+
+        <section id="landing-page-container" class="no-display">
+            <div class="info-display-container">
+                <h1 class="announcer-message no-display-text" id="greet-message-1">Greetings!</h1>
+                <h1 class="no-display info-text" id="h1-info-name"></h1>
+            </div>
+            <div class="info-display-container">
+                <h1 class="announcer-message no-display-text" id="greet-message-2">Your password is:</h1>
+                <h1 class="no-display info-text" id="h1-info-password"></h1>
+            </div>
+            <div class="info-display-container">
+                <h1 class="announcer-message no-display-text" id="greet-message-3">Your email is:</h1>
+                <h1 class="no-display info-text" id="h1-info-email"></h1>
+            </div>
+            <div class="info-display-container">
+                <h1 class="announcer-message no-display-text" id="greet-message-4">Your phone number is:</h1>
+                <h1 class="no-display info-text" id="h1-info-phone"></h1>
+            </div>
+            <div class="info-display-container">
+                <h1 class="announcer-message no-display-text" id="greet-message-5">Your webpage is:</h1>
+                <h1 class="no-display info-text" id="h1-info-webpage"></h1>
+            </div>
         </section>
     </main>
 </body>
