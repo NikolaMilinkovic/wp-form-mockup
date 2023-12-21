@@ -52,14 +52,14 @@ function transitionPage() {
     enableParallax = false;
     document.removeEventListener("mousemove", moveBackground);
     document.getElementById('form-container').classList.toggle('roll-out-form');
-    document.getElementById('para-1').classList.toggle('roll-out-para-1');
-    document.getElementById('para-2').classList.toggle('roll-out-para-2');
-    document.getElementById('para-3').classList.toggle('roll-out-para-3');
-    document.getElementById('para-4').classList.toggle('roll-out-para-4');
-    document.getElementById('para-5').classList.toggle('roll-out-para-5');
-    document.getElementById('para-6').classList.toggle('roll-out-para-6');
-    document.getElementById('para-7').classList.toggle('roll-out-para-7');
-    document.getElementById('para-8').classList.toggle('roll-out-para-8');
+
+    // Adds class roll-out-para-[i] to each NightVector element
+    const toggleNightVectors = ['para-1', 'para-2', 'para-3', 'para-4', 'para-5', 'para-6', 'para-7', 'para-8'];
+    let i = 1;
+    for (const elementId of toggleNightVectors) {
+        document.getElementById(elementId).classList.toggle('roll-out-para-' + i);
+        i++;
+    }
     document.documentElement.classList.toggle('sunrise-background-color');
 
     setTimeout(function () {
