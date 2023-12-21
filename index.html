@@ -15,22 +15,30 @@
     <title>WP Form mockup</title>
 </head>
 <body>
-    <main>
-        <div class="parallax">
-            <img src="./vectors/nebo-bez-zvezda.svg" alt="background" class="para" data-speed-x="-0.010" data-speed-y="-0.010">
+    <main id="main-form">
+        <div class="parallax" id="parallax-container">
+            <!-- NIGHT VECTORS -->
+            <img src="./vectors/nebo-bez-zvezda.svg" alt="background" class="para" data-speed-x="-0.010" data-speed-y="-0.010" id="para-1">
+            <img src="./vectors/zvezde-nebo.svg" alt="stars in the sky" class="" data-speed-x="0.025" data-speed-y="0.015" id="para-2">
+            <img src="./vectors/smol-cloud.png" alt="small cloud" class="para" data-speed-x="0.025" data-speed-y="0" id="para-3">
+            <img src="./vectors/big-cloud.png" alt="bigger cloud" class="para" data-speed-x="-0.035" data-speed-y="0" id="para-4">
+            <img src="./vectors/planine-1.svg" alt="mountains" class="para" data-speed-x="0.001" data-speed-y="0.001" id="para-5">
+            <img src="./vectors/planine-2.svg" alt="mountains" class="para" data-speed-x="0.001" data-speed-y="0.001" id="para-6">
+            <img src="./vectors/odsjaj.svg" alt="moon reflection" class="para" data-speed-x="0.010" data-speed-y="0.010" id="para-7">
+            <img src="./vectors/zvezdice.svg" alt="star reflection" class="para" data-speed-x="0.010" data-speed-y="-0.008" id="para-8">
+            <!-- \NIGHT VECTORS -->
 
-            <img src="./vectors/zvezde-nebo.svg" alt="stars in the sky" class="" data-speed-x="0.025" data-speed-y="0.015">
 
-            <img src="./vectors/smol-cloud.png" alt="small cloud" class="para" data-speed-x="0.025" data-speed-y="0">
-            <img src="./vectors/big-cloud.png" alt="bigger cloud" class="para" data-speed-x="-0.035" data-speed-y="0">
+            <!-- SUNRISE VECTORS -->
+            <img src="./vectors/sunrise/Asset 2.svg" alt="background" class="para para-sunrise" data-speed-x="0" data-speed-y="0" id="para-9">
+            <img src="./vectors/sunrise/Asset 3.svg" alt="lake" class="para para-sunrise" data-speed-x="0" data-speed-y="0" id="para-10">
+            <img src="./vectors/sunrise/Asset 4.svg" alt="reflection" class="para para-sunrise" data-speed-x="-0.01" data-speed-y="-0.01" id="para-11">
+            <img src="./vectors/sunrise/Asset 5.svg" alt="right bush & rocks" class="para para-sunrise" data-speed-x="0.02" data-speed-y="-0.02" id="para-12">
+            <img src="./vectors/sunrise/Asset 6.svg" alt="left bush & rocks" class="para para-sunrise" data-speed-x="-0.02" data-speed-y="0.015" id="para-13">
 
-            <img src="./vectors/planine.svg" alt="mountains" class="para" data-speed-x="0.001" data-speed-y="0.001">
-            <img src="./vectors/odsjaj.svg" alt="moon reflection" class="para" data-speed-x="0.010" data-speed-y="0.010">
-            <img src="./vectors/zvezdice.svg" alt="star reflection" class="para" data-speed-x="0.010" data-speed-y="-0.008">
-
-
+            <!-- \SUNRISE VECTORS -->
         </div>
-        <section class="form-container">
+        <section class="form-container" id="form-container">
             <form method="post" id="form">
                 <div class="header-container">
                     <h1>Input form</h1>

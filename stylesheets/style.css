@@ -51,7 +51,7 @@ table {
     height: 100dvh;
     width: 100vw;
     height: 100vh;  
-    background-color: #000D1F;
+    background-color: #160038;
     overflow: hidden;
     font-family: Helvetica, sans-serif, Arial;
 
@@ -80,11 +80,6 @@ table {
     height: 100vh;
     object-fit: cover;
     user-select: none;
-}
-@keyframes parallax {
-    to{
-        transform: translateY(200px);
-    }
 }
 /*  <-- \PARALLAX SETTINGS -->  */
 
@@ -229,5 +224,150 @@ button:focus{
 
 
 /*  <-- PARALLAX SETTINGS -->  */
+.roll-out-form {
+    animation: form-remove linear 1.2s forwards;
+}
+@keyframes form-remove {
+    from {
+        
+    }
+    to {
+        scale: 1.5;
+        opacity: 0;
+    }
+}
+.roll-out-para-1{
+    animation: parallax-1 linear 1.5s forwards;
+}
+.roll-out-para-2{
+    animation: parallax-1 linear 1.5s forwards;
+}
+.roll-out-para-3{
+    animation: parallax-3 linear 2s forwards;
+}
+.roll-out-para-4{
+    animation: parallax-4 linear 2s forwards;
+}
+.roll-out-para-5{
+    animation: parallax-down linear 2s forwards;
+}
+.roll-out-para-6{
+    animation: parallax-down linear 2s forwards;
+}
+.roll-out-para-7{
+    animation: parallax-down linear 2s forwards;
+}
+.roll-out-para-8{
+    animation: parallax-down linear 2s forwards;
+}
+.sunrise-background-color{
+    animation: root-background linear 2s forwards; 
+}
+@keyframes parallax-1 {
+    from {
+
+    }
+    to {
+        transform: translateY(15vh);
+        scale: 2.5;
+        opacity: 0;
+    }
+}
+
+@keyframes parallax-3 {
+    from {
+
+    }
+    to {
+        transform: translateX(-110vw);
+    }
+}
+@keyframes parallax-4 {
+    from {
+
+    }
+    to {
+        transform: translateX(110vw);
+    }
+}
+@keyframes parallax-down {
+    from {
+        
+    }
+    to {
+        transform: translateY(110vh);
+    }
+}
+@keyframes root-background{
+    from {
+        background-color: #160038;
+    }
+    to {
+        background-color: #5C0C43;
+    }
+}
+
+
+
+/*  <-- SUNRISE SETTINGS -->  */
+.para-sunrise{
+    display: none;
+}
+.para-night-sky{
+    display: none;
+}
+.sunrise-roll-in-para-9{
+    animation: sunrise-9 linear 2s forwards;
+}
+.sunrise-roll-in-para-10{
+    animation: sunrise-10 linear 2s forwards;
+}
+.sunrise-roll-in-para-12{
+    animation: sunrise-12 linear 1.5s forwards;
+}
+.sunrise-roll-in-para-13{
+    animation: sunrise-13 linear 1.5s forwards;
+}
+@keyframes sunrise-9 {
+    from {
+        opacity: 0;
+        scale: 95%;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes sunrise-10 {
+    from {
+        opacity: 0;
+        transform: translateY(20vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+@keyframes sunrise-12 {
+    from {
+        opacity: 0;
+        transform: translateX(40vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+@keyframes sunrise-13 {
+    from {
+        opacity: 0;
+        transform: translateX(-40vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+/*  <-- \SUNRISE SETTINGS -->  */
 
 /*  <-- \PARALLAX SETTINGS -->  */
