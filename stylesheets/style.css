@@ -234,6 +234,7 @@ button:focus{
         scale: 1.5;
         opacity: 0;
     }
+
 }
 .roll-out-para-1{
     animation: parallax-1 linear 1.5s forwards;
@@ -272,7 +273,6 @@ button:focus{
         opacity: 0;
     }
 }
-
 @keyframes parallax-3 {
     from {
 
@@ -318,7 +318,6 @@ button:focus{
 .para-night-sky{
     display: none;
 }
-/* para-9 */
 .sunrise-roll-in-para-9{
     animation: sunrise-9 linear 2s;
 }
@@ -326,22 +325,22 @@ button:focus{
     opacity: 1;
     scale: 1;
 }
-/* para-10 */
 .sunrise-roll-in-para-10{
     animation: sunrise-10 linear 2s;
 }
-/* para-12 */
 .sunrise-roll-in-para-12{
     animation: sunrise-12 linear 1.5s;
 }
-/* para-13 */
 .sunrise-roll-in-para-13{
     animation: sunrise-13 linear 1.5s;
 }
 .sunrise-10-12-13-end{
     opacity: 1;
     transform: translateY(0vh);
+    scale: 1.05;
 }
+
+/* SUNRISE ANIMATIONS */
 
 @keyframes sunrise-9 {
     from {

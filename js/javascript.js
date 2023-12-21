@@ -13,6 +13,10 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+
+
+/*   PARALLAX / VECTOR MANIPULATION   */
+
 function moveBackground(e) {
     const body = document.body;
     const parallaxElements = document.querySelectorAll(".para");
@@ -39,13 +43,11 @@ function moveBackground(e) {
     const body = document.body;
 
     // Turns off parallax for devices with a certain width
-    if (window.matchMedia("(max-width: 600px)").matches) {
+    if (window.matchMedia("(max-width: 600px)").matches)
         enableParallax = false;
-    }
-
-    if (enableParallax) {
+    if (enableParallax)
         document.addEventListener("mousemove", moveBackground);
-    }
+
 })();
 
 function transitionPage() {
@@ -70,7 +72,6 @@ function transitionPage() {
 function beginSunset() {
 
     const toggleSunriseVectors = ['para-9', 'para-10', 'para-11', 'para-12', 'para-13'];
-
     for (const elementId of toggleSunriseVectors) {
         document.getElementById(elementId).classList.toggle('para-sunrise');
         document.getElementById(elementId).classList.toggle('para-sunrise-settings');
@@ -106,3 +107,5 @@ function beginSunset() {
         document.addEventListener("mousemove", moveBackground);
     }, 1550);
 }
+
+/*   \PARALLAX / VECTOR MANIPULATION   */
