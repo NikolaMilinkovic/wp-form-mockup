@@ -134,8 +134,10 @@ h2{
 form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding: 15% 15%;
+}
+.gap{
+    margin-top: 15px;
 }
 input{
     background-color: rgba(0, 13, 31, 1);
@@ -164,8 +166,10 @@ input:-webkit-autofill{
     -webkit-background-clip: text;
 }
 #h2-info{
-    display: flex;
-    margin-top: auto;
+    margin-top: 15px;
+}
+#input-email, #input-phone-num, #input-site-url{
+    margin-top: 15px;
 }
 #pass-err-output, #email-err-output{
     color: var(--color);
@@ -209,7 +213,7 @@ input:-webkit-autofill{
     display: inline-block;
     position: relative;
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 button:after {
     content: "";
