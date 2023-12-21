@@ -104,6 +104,5 @@ function beginSunset() {
     setTimeout(function () {
         enableParallax = true;
         document.addEventListener("mousemove", moveBackground);
-        console.log("timeout je izvrsen.")
-    }, 2100);
+    }, 2050);
 }
