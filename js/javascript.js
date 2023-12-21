@@ -35,7 +35,7 @@ function moveBackground(e) {
         const translateY = (mouseY - centerY) * factorY;
 
         // Apply translation and scaling
-        element.style.transform = `translate(${translateX}px, ${translateY}px) scale(1.05)`;
+        element.style.transform = `translate(${translateX}px, ${translateY}px)`;
     });
 }
 

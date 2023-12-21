@@ -80,6 +80,9 @@ table {
     object-fit: cover;
     user-select: none;
 }
+.para{
+    scale: 1.05;
+}
 /*  <-- \PARALLAX SETTINGS -->  */
 
 
@@ -318,15 +321,11 @@ button:focus{
 .para-night-sky{
     display: none;
 }
-#para-10 #para-11 #para-12 #para-13{
-    scale: 1.05;
-}
 .sunrise-roll-in-para-9{
     animation: sunrise-9 linear 2s;
 }
 .sunrise-9-end{
     opacity: 1;
-    scale: 1;
 }
 .sunrise-roll-in-para-10{
     animation: sunrise-10 linear 2s;
