@@ -7,10 +7,9 @@
     <meta name="keywords" content="web programiranje mockup form, wp mockup form, wp form">
     <meta name="author" content="Nikola Milinkovic | nikolamilinkovic221@gmail.com">
 
-    <script src="./js/javascript.js" defer></script>
+    <script type="module" src="./js/javascript.js" defer></script>
+    <script type="module" src="./js/regex-evaluation.js" defer></script>
     <link rel="stylesheet" href="./stylesheets/style.css">
-    
-    <script src="" defer></script>
 
     <title>WP Form mockup</title>
 </head>
@@ -48,12 +47,16 @@
                 <input type="text" id="input-last-name" placeholder="* Last name">
                 <input type="password" id="input-password" placeholder="* Password">
                 <input type="password" id="input-password-repeat" placeholder="* Repeat password">
-                    <div class="header-container">
-                        <h2>Additional information</h2>
-                    </div>
-                    <input type="text" id="input-email" placeholder="* E-mail">
-                    <input type="text" id="input-phone-num" placeholder="* Phone number">
-                    <input type="text" id="input-site-url" placeholder="* Site url">
+                <div id="pass-err-output"></div>
+                <div class="header-container">
+                    <h2 id="h2-info">Additional information</h2>
+                </div>
+                <input type="text" id="input-email" placeholder="* E-mail">
+                <div id="email-err-output"></div>
+                <input type="text" id="input-phone-num" placeholder="* Phone number">
+                <div id="phone-err-output"></div>
+                <input type="text" id="input-site-url" placeholder="* Site url">
+                <div id="site-url-err-output"></div>
                 <div id="btn-container">
                     <button type="submit" id="btn-submit">Create Account</button>
                 </div>

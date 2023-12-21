@@ -1,9 +1,13 @@
+import { evaluateInput } from './regex-evaluation.js';
+
 document.getElementById('form').addEventListener('submit', signUp);
 var enableParallax = true;
 
+
+
 function signUp(event) {
     event.preventDefault();
-    transitionPage();
+    evaluateInput();
 }
 
 document.addEventListener('keydown', function (event) {
@@ -50,7 +54,7 @@ function moveBackground(e) {
 
 })();
 
-function transitionPage() {
+export function transitionPage() {
     enableParallax = false;
     document.removeEventListener("mousemove", moveBackground);
     document.getElementById('form-container').classList.toggle('roll-out-form');
