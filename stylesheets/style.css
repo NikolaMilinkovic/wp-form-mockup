@@ -73,7 +73,6 @@ table {
 }
 .parallax>*{
     grid-area: stack;
-    animation: parallax linear;
 }
 .parallax>img{
     width: 100vw;
@@ -313,21 +312,37 @@ button:focus{
 .para-sunrise{
     display: none;
 }
+.para-sunrise-settings{
+    display: block;
+}
 .para-night-sky{
     display: none;
 }
+/* para-9 */
 .sunrise-roll-in-para-9{
-    animation: sunrise-9 linear 2s forwards;
+    animation: sunrise-9 linear 2s;
 }
+.sunrise-9-end{
+    opacity: 1;
+    scale: 1;
+}
+/* para-10 */
 .sunrise-roll-in-para-10{
-    animation: sunrise-10 linear 2s forwards;
+    animation: sunrise-10 linear 2s;
 }
+/* para-12 */
 .sunrise-roll-in-para-12{
-    animation: sunrise-12 linear 1.5s forwards;
+    animation: sunrise-12 linear 1.5s;
 }
+/* para-13 */
 .sunrise-roll-in-para-13{
-    animation: sunrise-13 linear 1.5s forwards;
+    animation: sunrise-13 linear 1.5s;
 }
+.sunrise-10-12-13-end{
+    opacity: 1;
+    transform: translateY(0vh);
+}
+
 @keyframes sunrise-9 {
     from {
         opacity: 0;

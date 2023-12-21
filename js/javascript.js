@@ -68,34 +68,42 @@ function transitionPage() {
 }
 
 function beginSunset() {
-    document.getElementById('para-9').classList.toggle('para-sunrise');
+
+    const toggleSunriseVectors = ['para-9', 'para-10', 'para-11', 'para-12', 'para-13'];
+
+    for (const elementId of toggleSunriseVectors) {
+        document.getElementById(elementId).classList.toggle('para-sunrise');
+        document.getElementById(elementId).classList.toggle('para-sunrise-settings');
+    }
+
     document.getElementById('para-9').classList.toggle('sunrise-roll-in-para-9');
-
-    document.getElementById('para-10').classList.toggle('para-sunrise');
     document.getElementById('para-10').classList.toggle('sunrise-roll-in-para-10');
-
-    document.getElementById('para-11').classList.toggle('para-sunrise');
     document.getElementById('para-11').classList.toggle('sunrise-roll-in-para-10');
-
-    document.getElementById('para-12').classList.toggle('para-sunrise');
+    setTimeout(function () {
+        document.getElementById('para-9').classList.toggle('sunrise-9-end');
+        document.getElementById('para-10').classList.toggle('sunrise-10-12-13-end');
+        document.getElementById('para-11').classList.toggle('sunrise-10-12-13-end');
+    }, 2000);
     document.getElementById('para-12').classList.toggle('sunrise-roll-in-para-12');
-
-    document.getElementById('para-13').classList.toggle('para-sunrise');
     document.getElementById('para-13').classList.toggle('sunrise-roll-in-para-13');
+    setTimeout(function () {
+        document.getElementById('para-12').classList.toggle('sunrise-10-12-13-end');
+        document.getElementById('para-13').classList.toggle('sunrise-10-12-13-end');
+    }, 1500);
 
+    
     // Toggle other vector elements off
     document.getElementById('form-container').classList.toggle('para-night-sky');
-    document.getElementById('para-1').classList.toggle('para-night-sky');
-    document.getElementById('para-2').classList.toggle('para-night-sky');
-    document.getElementById('para-3').classList.toggle('para-night-sky');
-    document.getElementById('para-4').classList.toggle('para-night-sky');
-    document.getElementById('para-5').classList.toggle('para-night-sky');
-    document.getElementById('para-6').classList.toggle('para-night-sky');
-    document.getElementById('para-7').classList.toggle('para-night-sky');
-    document.getElementById('para-8').classList.toggle('para-night-sky');
+    const toggleNightVectors = ['para-1', 'para-2', 'para-3', 'para-4', 'para-5', 'para-6', 'para-7', 'para-8'];
+
+    for (const elementId of toggleNightVectors) {
+        document.getElementById(elementId).classList.toggle('para-night-sky');
+        document.getElementById(elementId).classList.toggle('para');
+    }
 
     setTimeout(function () {
         enableParallax = true;
         document.addEventListener("mousemove", moveBackground);
-    }, 4000);
+        console.log("timeout je izvrsen.")
+    }, 4500);
 }
