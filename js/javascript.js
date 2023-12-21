@@ -77,7 +77,7 @@ export function transitionPage() {
 
 function beginSunset() {
 
-    const toggleSunriseVectors = ['para-9', 'para-10', 'para-11', 'para-12', 'para-13'];
+    const toggleSunriseVectors = ['para-9', 'para-10', 'para-11', 'para-12', 'para-13', 'para-14'];
     for (const elementId of toggleSunriseVectors) {
         document.getElementById(elementId).classList.toggle('para-sunrise');
         document.getElementById(elementId).classList.toggle('para-sunrise-settings');
@@ -86,6 +86,7 @@ function beginSunset() {
     document.getElementById('para-9').classList.toggle('sunrise-roll-in-para-9');
     document.getElementById('para-10').classList.toggle('sunrise-roll-in-para-10');
     document.getElementById('para-11').classList.toggle('sunrise-roll-in-para-10');
+    document.getElementById('para-14').classList.toggle('sunrise-roll-in-para-14');
     setTimeout(function () {
         document.getElementById('para-9').classList.toggle('sunrise-9-end');
         document.getElementById('para-10').classList.toggle('sunrise-10-12-13-end');

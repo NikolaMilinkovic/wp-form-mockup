@@ -290,6 +290,9 @@ button:focus{
 .sunrise-background-color{
     animation: root-background linear 2s forwards; 
 }
+#para-14{
+    scale: 0.7;
+}
 @keyframes parallax-1 {
     from {
 
@@ -360,6 +363,9 @@ button:focus{
 .sunrise-roll-in-para-13{
     animation: sunrise-13 linear 1.5s;
 }
+.sunrise-roll-in-para-14{
+    animation: birds-fade-in linear 1.5s;
+}
 .sunrise-10-12-13-end{
     opacity: 1;
     transform: translateY(0vh);
@@ -405,6 +411,14 @@ button:focus{
     to {
         opacity: 1;
         transform: translateY(0vh);
+    }
+}
+@keyframes birds-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 /*  <-- \SUNRISE SETTINGS -->  */
