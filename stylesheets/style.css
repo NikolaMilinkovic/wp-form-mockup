@@ -318,6 +318,9 @@ button:focus{
 .para-night-sky{
     display: none;
 }
+#para-10 #para-11 #para-12 #para-13{
+    scale: 1.05;
+}
 .sunrise-roll-in-para-9{
     animation: sunrise-9 linear 2s;
 }
@@ -337,7 +340,6 @@ button:focus{
 .sunrise-10-12-13-end{
     opacity: 1;
     transform: translateY(0vh);
-    scale: 1.05;
 }
 
 /* SUNRISE ANIMATIONS */
