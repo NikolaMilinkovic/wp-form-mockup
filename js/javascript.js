@@ -62,7 +62,7 @@ export function transitionPage() {
     document.getElementById('form-container').classList.toggle('roll-out-form');
 
     // Adds class roll-out-para-[i] to each NightVector element
-    const toggleNightVectors = ['para-1', 'para-2', 'para-3', 'para-4', 'para-5', 'para-6', 'para-7', 'para-8'];
+    const toggleNightVectors = ['para-1', 'para-2', 'para-3', 'para-4', 'para-5', 'para-7', 'para-8'];
     let i = 1;
     for (const elementId of toggleNightVectors) {
         document.getElementById(elementId).classList.toggle('roll-out-para-' + i);
@@ -149,7 +149,7 @@ function beginSunset() {
     
     // Toggle other vector elements off
     document.getElementById('form-container').classList.toggle('para-night-sky');
-    const toggleNightVectors = ['para-1', 'para-2', 'para-3', 'para-4', 'para-5', 'para-6', 'para-7', 'para-8'];
+    const toggleNightVectors = ['para-1', 'para-2', 'para-3', 'para-4', 'para-5', 'para-7', 'para-8'];
 
     for (const elementId of toggleNightVectors) {
         document.getElementById(elementId).classList.toggle('para-night-sky');
