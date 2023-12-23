@@ -171,7 +171,7 @@ input:-webkit-autofill{
 #input-email, #input-phone-num, #input-site-url{
     margin-top: 15px;
 }
-#pass-err-output, #email-err-output{
+#pass-err-output, #email-err-output, #phone-err-output, #site-url-err-output{
     color: var(--color);
     font-size: 12px;
 }
